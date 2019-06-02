@@ -10,3 +10,8 @@
 
 ## sublime 手动安装插件
 - [wpy文件高亮](https://github.com/vuejs/vue-syntax-highlight)
+
+## WeUI
+- [WeUI](https://github.com/Tencent/weui) 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信 Web 开发量身设计，可以令用户的使用感知更加统一，当然也有小程序版本的 [WeUI](https://github.com/Tencent/weui-wxss)，这一节我们来了解 WeUI 的使用。
+- 我们使用了 WePY 框架，那么 WePY 如何使用 WeUI 呢，这里 有一个官方推荐的例子供大家参考，我们先将这个项目导入开发者工具。
+- git clone git@github.com:wepyjs/wepy-weui-demo.git
