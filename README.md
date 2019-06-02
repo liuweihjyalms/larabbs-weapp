@@ -5,3 +5,5 @@
 - 首先需要全局安装 wepy-cli
 - sudo yarn global add wepy-cli
 - wepy -v 可以查看到目前版本
+- wepy init standard ./  初始化项目交互式命令行程序
+- wepy build --watch 项目进行编译
