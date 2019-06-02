@@ -7,3 +7,6 @@
 - wepy -v 可以查看到目前版本
 - wepy init standard ./  初始化项目交互式命令行程序
 - wepy build --watch 项目进行编译
+
+## sublime 手动安装插件
+- [wpy文件高亮](https://github.com/vuejs/vue-syntax-highlight)
