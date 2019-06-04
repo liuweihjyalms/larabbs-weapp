@@ -70,8 +70,8 @@ export default class extends wepy.app {
       selectedColor: '#00b5ad'
     }
   }
-  methods = {}
-
+  methods = {
+  }
   constructor () {
     super()
     this.use('requestfix')
