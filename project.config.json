@@ -1,10 +1,24 @@
 {
 	"description": "larabbs weapp project",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": false,
+		"enhance": false,
 		"postcss": false,
-		"minified": false
+		"minified": false,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": false,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
 	"appid": "wxfcf51c259354fca1",
