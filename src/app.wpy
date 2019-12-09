@@ -30,7 +30,6 @@ page{
   font-size: 14px;
 }
 </style>
-
 <script>
 import wepy from 'wepy'
 import 'wepy-async-function'
@@ -40,7 +39,8 @@ export default class extends wepy.app {
   config = {
     pages: [
       'pages/index',
-      'pages/user',
+      'pages/users/me',
+      'pages/users/edit',
       'pages/auth/login',
       'pages/auth/register'
     ],
@@ -57,7 +57,7 @@ export default class extends wepy.app {
         iconPath: 'images/index.png',
         selectedIconPath: 'images/index_selected.png'
       }, {
-        pagePath: 'pages/user',
+        pagePath: 'pages/users/me',
         text: '我的',
         iconPath: 'images/user.png',
         selectedIconPath: 'images/user_selected.png'
@@ -68,14 +68,12 @@ export default class extends wepy.app {
   }
   // 获取当前登录用户信息
   async getCurrentUser () {
-    // 如果用户未登录  
+    // 如果用户未登录
     if (!this.checkLogin()) {
       return null
     }
-
     // 从缓存中获取用户信息
     let user = wepy.getStorageSync('user')
-
     try {
       // 登录了但是缓存中没有，请求接口获取
       if (!user) {
@@ -93,21 +91,17 @@ export default class extends wepy.app {
         content: '服务器错误，请联系管理员'
       })
     }
-
     return user
   }
-
   // 用户是否已经登录
   checkLogin () {
     return (wepy.getStorageSync('access_token') !== '')
   }
-
   constructor () {
     super()
     this.use('requestfix')
     this.use('promisify')
   }
-
   onLaunch() {
   }
 }
