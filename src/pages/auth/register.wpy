@@ -181,6 +181,9 @@
           // 设置用户信息
           wepy.setStorageSync('user', registerResponse.data)
 
+          // 获取用户权限
+          this.$parent.getPerms()
+
           wepy.showToast({
             title: '注册成功',
             icon: 'success'
@@ -197,7 +200,7 @@
         console.log(err)
         wepy.showModal({
           title: '提示',
-          content: '服务器错误，请联系管理员996'
+          content: '服务器错误，请联系管理员'
         })
       }
     }
