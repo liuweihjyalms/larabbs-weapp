@@ -45,7 +45,7 @@ module.exports = {
       filter: /\.js$/,
       config: {
         find: /__BASE_URL__/g,
-        replace: prod ? "'https://gy.slswxw.cn/api/v1'" : "'http://liuwei.test/api/v1'"
+        replace: prod ? "'https://liuweihjyalms.top/api/v1'" : "'http://liuwei.test/api/v1'"
       }
     }
   },
@@ -81,7 +81,7 @@ if (prod) {
       filter: /\.js$/,
       config: {
         find: /__BASE_URL__/g,
-        replace: prod ? "'https://gy.slswxw.cn/api/v1'" : "'http://liuwei.test/api/v1'"
+        replace: prod ? "'https://liuweihjyalms.top/api/v1'" : "'http://liuwei.test/api/v1'"
       }
     }
   }
